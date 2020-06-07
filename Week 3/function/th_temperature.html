@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<h3>Type a value in the Fahrenheit field to convert the value</h3>
+<input type="text" id="temperature">
+<input type="button" onclick="temperNumber()" value="C">
+<P>Celsius: <span id="result"></span> </P>
+<script>
+
+    function temperNumber() {
+        let x = parseFloat (document.getElementById("temperature").value);
+        document.getElementById("result").innerHTML = (x - 32)/1.8;
+    }
+
+</script>
+</body>
+</html>

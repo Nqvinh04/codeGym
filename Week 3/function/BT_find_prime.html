@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên tố</title>
+</head>
+<body>
+<script>
+    // tìm số nguyên tố nhỏ hơn 10000
+    // let N = 2;
+    // for (N = 2; N <= 10000; N++){
+    //     if (isPrime(N)){
+    //         document.write(N + "</br>");
+    //     }
+    // }
+
+    //Tìm 20 số nguyên tố
+    let N = 2;
+    let count = 1;
+        while (count < 20){
+            if (isPrime(N)){
+            document.write( N + "</br>");
+            count++;
+        }
+            N++;
+    }
+
+
+    function isPrime(n) {
+        let prime = true;
+        for (let i = 2; i < n - 1; i++){
+            if(n % i === 0){
+                prime = false;
+                break;
+            }
+            }
+        return prime;
+    }
+
+
+</script>
+</body>
+</html>
