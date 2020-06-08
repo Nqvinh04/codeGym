@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table >
+    <tr>
+        <td>Amount</td>
+        <td>form Currency</td>
+        <td>To Currency</td>
+    </tr>
+    <tr>
+        <td><input type="number" id="numberID"></td>
+        <td><select id ="form">
+            <option value="23000">VietNam</option>
+            <option value="1">USD</option>
+        </select></td>
+        <td><select id = "to">
+            <option value="1">USD</option>
+            <option value="23000">VietNam</option>
+        </select>
+        </td>
+    </tr>
+</table>
+    <button type="button" onclick="convertID()">Convert</button>
+    <p>Result: <span id ="resultID"></span></p>
+<script>
+    function convertID() {
+        let x = document.getElementById("numberID").value;
+        let a = document.getElementById("form").value;
+        let b = document.getElementById("to").value;
+        let c = (x * a)/b;
+        document.getElementById("resultID").innerHTML = c;
+    }
+</script>
+</body>
+</html>

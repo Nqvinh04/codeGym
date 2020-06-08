@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<h3> Caculator </h3>
+<form>
+    <table>
+        <tr>
+            <td><input type="number" id = "numberA" ></td>
+            <td><input type="number" id = "numberB" ></td>
+        </tr>
+    </table>
+    <button type="button" onclick="addition()" >Addition(+)</button>
+    <button type="button" onclick="subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="multiplication()">Multiplication(x)</button>
+    <button type="button" onclick="division()">Division(/)</button>
+    <p> Result: <span id = "resultID"></span></p>
+</form>
+<script>
+
+    function addition() {
+        let x = parseInt(document.getElementById("numberA").value);
+        let y = parseInt(document.getElementById("numberB").value);
+        document.getElementById("resultID").innerText = x + y;
+
+    }
+    function subtraction() {
+        let a = parseInt(document.getElementById("numberA").value);
+        let b = parseInt(document.getElementById("numberB").value);
+        document.getElementById("resultID").innerText = a - b;
+    }
+    function multiplication() {
+        let c = parseInt(document.getElementById("numberA").value);
+        let d = parseInt(document.getElementById("numberB").value);
+        document.getElementById("resultID").innerText = c * d;
+    }
+    function division() {
+        let e = parseInt(document.getElementById("numberA").value);
+        let f = parseInt(document.getElementById("numberB").value);
+        document.getElementById("resultID").innerText = e / f;
+    }
+
+</script>
+</body>
+</html>
