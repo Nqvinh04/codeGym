@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(temperC) {
+        this.temperC = temperC;
+        this.temperF = function () {
+            return (9 * temperC) / 5 + 32;
+        }
+        this.temperK = function () {
+            return temperC * 273;
+        }
+    };
+    let creatTemperature = new Temperature(prompt("Nhập nhiệt độ hiện tại"));
+    let TemperF = creatTemperature.temperF();
+    let TemperK = creatTemperature.temperK();
+    alert( "Nhiệt độ F: " + TemperF + " , " + "Nhiệt độ K: " + TemperK);
+
+</script>
+</body>
+</html>  
