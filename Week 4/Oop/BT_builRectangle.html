@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvasID" width="720" height="480" style="border: 1px solid black"></canvas>
+<script>
+    function Rectangle(length,width) {
+        this.length = length;
+        this.width = width;
+        this.getarea = function () {
+            return length * width;
+        }
+        this.getper = function () {
+            return (length + width)*2;
+        }
+        this.painRectangle = function () {
+            let c = document.getElementById("canvasID");
+            let ctr = c.getContext("2d");
+            ctr.fillStyle = "#ff0000";
+            ctr.fillRect(30,30,width,length);
+        }
+    };
+
+    let myRactangle = new Rectangle(50,100);
+    let area = myRactangle.getarea();
+    let per = myRactangle.getper();
+    document.write("</br>" + "Diện tích hình chữ nhật " + area + "</br>")
+    document.write("Chu vi hình chữ nhất là " + per);
+    myRactangle.painRectangle();
+</script>
+</body>
+</html>
