@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let test =+ prompt("Nhập điểm bài kiểm tra");
+        let midTest =+ prompt("Nhập điểm giữa kỳ");
+        let lastTest =+ prompt("Nhập điểm cuối kỳ");
+        let mediumScore = (test + midTest + lastTest)/3;
+        if (mediumScore <=5){
+            alert("Học sinh dưới trung bình ")
+        } else if (mediumScore <= 6.5){
+            alert("Học sinh trung bình")
+        } else if (mediumScore <= 8 ){
+            alert("Học sinh khá")
+        } else if (mediumScore <= 10){
+            alert("Học sinh giỏi")
+        } else{
+            alert("None")
+        }
+
+    </script>
+</body>
+</html>

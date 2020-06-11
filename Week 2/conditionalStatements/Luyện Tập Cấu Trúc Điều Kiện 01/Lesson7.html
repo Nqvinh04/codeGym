@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let timePhone =+ prompt(" Nhập số thời gian sử dụng điện thoại của một hộ gia đình(phút)");
+    let checkTime1 =  timePhone < 50;
+    let checkTime2 = timePhone < 100;
+    let checkTime3 = timePhone < 150;
+    let checkTime4 = timePhone < 200;
+    // let time1 = 0;
+    // let time2 = 0;
+    // let time3 = 0;
+    // let time4 = 0;
+    // let time5 = 0;
+    let time =0;
+
+    if  ( checkTime1 ){
+         time = timePhone * 2;
+    } else if ( checkTime2 ){
+        time = timePhone * 1.8;
+    } else if (checkTime3){
+        time = timePhone * 1.6;
+    } else if (checkTime4){
+        time = timePhone * 1.4;
+    } else {
+        time = timePhone * 1.2;
+    }
+    // sum = time1 + time2 + time3 + time4 + time5;
+    alert("Giá cước điện thoại của hộ gia đình là " + time);
+</script>
+</body>
+</html>
