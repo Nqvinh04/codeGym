@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numberA =+ prompt("Nhập số a");
+    let numberB =+ prompt("Nhập số b");
+    let numberC =+ prompt("Nhập số c");
+    let tG = Math.pow(numberB,2) - (4*numberA*numberC);
+    if (tG === 0){
+        alert("Phương Trình có nghiệm kép:  " + " x1 = " + "x2 = " + (-numberB / 2*numberA));
+    } else if (tG < 0){
+        alert(" Phương trình vô nghiệm");
+    } else {
+        alert(" Phương trình có 2 nghiệm: " + " x1 = "
+            + ((-numberB + Math.sqrt(tG))/(2*numberA)) + " ; "
+            + " x2 = " + ((-numberB - Math.sqrt(tG))/(2*numberA)));
+    }
+</script>
+</body>
+</html>
