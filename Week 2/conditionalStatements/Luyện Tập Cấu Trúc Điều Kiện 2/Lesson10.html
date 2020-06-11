@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let amountElectricity =+ prompt("lượng điện tiêu thu(kwh) ");
+    let kWh1 = 50;
+    let kWh2 = 100;
+    let kWh3 = 200;
+    let kWh4 = 300;
+    let kWh5 = 400;
+    moneykWh1 = amountElectricity * 1.678;
+    moneykWh2 = (kWh2 -kWh1)*1.734 + moneykWh1;
+    moneykWh3 = (kWh3-kWh2)*2.014 + moneykWh2;
+    moneykWh4 = (kWh4-kWh3)*2.536 + moneykWh3;
+    moneykWh5 = (kWh5-kWh4)*2.834 + moneykWh4;
+    monetkWh6 = (amountElectricity - kWh5)*2.927 + moneykWh5;
+    if(amountElectricity < kWh1){
+        money = moneykWh1;
+    }else if (amountElectricity < kWh2){
+        money = moneykWh2;
+    }else if (amountElectricity < kWh3){
+        money = moneykWh3;
+    }else if (amountElectricity < kWh4){
+        money = moneykWh4;
+    }else if (amountElectricity < kWh5){
+        money = moneykWh5;
+    }else {
+        money = monetkWh6;
+    }
+    alert("Tiền điện tháng này là: " + money + " nghìn đồng");
+</script>
+
+</body>
+</html>
