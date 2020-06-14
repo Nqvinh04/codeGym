@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let fibonaci1 = 0;
+    let fibonaci2 = 1;
+    let fibonaci3 = fibonaci1 + fibonaci2;
+    for (let i = 1; i <= fibonaci3; i++){
+        fibonaci1 = fibonaci2;
+        fibonaci2 = fibonaci3;
+        fibonaci3 = fibonaci1 + fibonaci2;
+        if (fibonaci3 % 5 === 0){
+            alert("Số đầu tiên trong dãy fibonacci chia hết cho 5 là" + fibonaci3);
+            break;
+        }
+    }
+</script>
 </body>
 </html>
