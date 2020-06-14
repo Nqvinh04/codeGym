@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let fibonaci1 = 0;
+    let fibonaci2 = 1;
+    let fibonaci3 = fibonaci1 + fibonaci2;
+    let sum = 0;
+    sum = fibonaci3;
+    for (let i=1; i<= 18; i++){
+        fibonaci1 = fibonaci2;
+        fibonaci2 = fibonaci3;
+        fibonaci3 = fibonaci1 + fibonaci2;
+        sum += fibonaci3;
+    }
+    alert(" Tổng của 20 số fibonacci đầu tiên là " + sum);
+</script>
 </body>
 </html>
