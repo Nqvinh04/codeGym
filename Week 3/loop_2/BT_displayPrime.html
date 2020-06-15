@@ -10,33 +10,47 @@
     let numbers =+ prompt('Số lượng số nguyên tố cần in là');
     let count = 0;
     let N = 2;
-    // while (count < numbers){
-    //     if (numberPrime(N)){
-    //        document.write(numbers + " Số nguyên tố đầu tiên là: " + N + "</br>");
-    //         count++;
-    //     }
-    //     N++;
-    // }
-
-    // function numberPrime(n) {
     while (count < numbers){
-        let prime = true;
-        for (let i = 2; i < N ; i++) {
-            if (N % i === 0) {
-                prime = false;
-                break;
-            }
-        }
-        if (prime){
-            document.write(numbers + " Số nguyên tố đầu tiên là: " + N + "</br>");
+        if (isPrime(N)){
+           document.write(numbers + " Số nguyên tố đầu tiên là: " + N + "</br>");
             count++;
         }
         N++;
-        }
+    }
+
+    // function numberPrime(n) {
+    // while (count < numbers){
+    //     let prime = true;
+    //     for (let i = 2; i < N ; i++) {
+    //         if (N % i === 0) {
+    //             prime = false;
+    //             break;
+    //         }
+    //     }
+    //     if (prime){
+    //         document.write(numbers + " Số nguyên tố đầu tiên là: " + N + "</br>");
+    //         count++;
+    //     }
+    //     N++;
+    //     }
 
 
         //            return prime;
         // }
+
+
+        // cách 2
+        function isPrime(value) {
+            if (value < 2) {
+                return false;
+            }
+                for (let i = 2; i < Math.sqrt(value);i++){
+                    if (value % i === 0){
+                        return false;
+                    }
+                }
+            return true;
+        }
 
 
 
