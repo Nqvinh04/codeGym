@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let temperature =+ prompt(" Nhập số nhiệt độ: ");
+    while (temperature < 20 || temperature > 100){
+       if ( temperature < 20){
+           alert( "tăng nhiệt độ");
+           temperature = parseInt(prompt("Nhập lại"));
+       } else if (temperature > 100){
+           alert("giảm nhiệt độ");
+           temperature = parseInt(prompt("Nhập lại"));
+       }
+    }
+    alert( temperature + " là nhiệt độ phù hợp");
+
+</script>
 </body>
 </html>
