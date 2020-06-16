@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="translateID">
+<input type="button" onclick="Translate()" value="Translate">
+ <script>
+     let eng = ["dog","cat","mouse","bird","durk"];
+     let vie = ["chó","mèo","chuột","chim","vịt"];
+    function Translate() {
+        let valueA = document.getElementById("translateID").value;
+        let flag= false;
+        for (let i = 0; i < eng.length; i++){
+            if (valueA === eng[i]){
+                flag = true;
+                let valueB = vie[i]
+                alert("Nghĩa tiếng việt: " + valueB);
+                break;
+            }
+            } if ( flag === false){
+            alert("Không có từ tìm kiếm");
+        }
+    }
+</script>
+</body>
+</html>
