@@ -7,17 +7,17 @@
 <body>
 <script>
 
-    let fibonaci1 = 0;
+    let fibonaci1 = 1;
     let fibonaci2 = 1;
-    let fibonaci3 = fibonaci1 + fibonaci2;
     // Cách 1:
     document.write(fibonaci1 + "</br>");
     document.write(fibonaci2 + "</br>");
     for (let i=0; i<= 18; i++){
+        let fibonaci3 = fibonaci1 + fibonaci2;
+    document.write(fibonaci3 + "</br>")
         fibonaci1 = fibonaci2;
         fibonaci2 = fibonaci3;
-        fibonaci3 = fibonaci1 + fibonaci2;
-        document.write(fibonaci3 + "</br>")
+
     }
 
 </script>
