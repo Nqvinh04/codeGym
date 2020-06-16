@@ -8,16 +8,19 @@
 <script>
     function Array(arr) {
         let max = arr[0];
-        for (let i = 0; i < arr.length;i++){
+        let location;
+        let i;
+        for ( i = 0; i < arr.length;i++){
             if (max < arr[i]){
                 max = arr[i]
+                location = i;
             }
         }
-        return max;
+        alert("số lớn nhất trong mảng" + max + " " + "Vị tri của số trên mảng là: " + location );
     }
 
     let n = [5,10,14,15,1,2,13,4,18,11];
-    alert("số lớn nhất trong mảng" + Array(n) );
+    Array(n);
 </script>
 </body>
 </html>
