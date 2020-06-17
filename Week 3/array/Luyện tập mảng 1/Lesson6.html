@@ -7,20 +7,6 @@
 <body>
 </body>
 <script>
-    // function checkArray(arr,a) {
-    //     for (let i = 0; i < arr.length; i++){
-    //         if (a === arr[i]){
-    //             document.write("V is in the array");
-    //             break;
-    //         } else {
-    //             document.write("V is not in the array");
-    //             break;
-    //         }
-    //     }
-    // }
-    // let integer = [5,6,7,8,10,11,2,3,1,13];
-    // let x =+ prompt("Nhập số cần tìm: ");
-    // checkArray(integer,x);
     let arr = [];
     for (let i = 1; i <= 10; i++) {
         let value = parseInt(prompt('Nhap vao so nguyen thu ' + i));
@@ -29,7 +15,7 @@
     let v = parseInt(prompt('Nhap vao so nguyen bat ky'));
     let isExist = false;
     for (let i = 0; i < arr.length; i++) {
-        if (v == arr[i]) {
+        if (v ===arr[i]) {
             isExist = true;
         }
     }
@@ -38,6 +24,5 @@
     } else {
         document.write(v + ' is not in the array.');
     }
-
 </script>   
 </html>

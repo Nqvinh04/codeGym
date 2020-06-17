@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkNumberArray(str) {
+        let count = 0;
+        if (str[0] !== " "){
+            count++;
+        }
+        for(let i = 0; i < str.length; i++){
+            if (str[i] === " " && str[i + 1] !== " "){
+                count++;
+            }
+        }
+        return count;
+    }
+    let a = "so nguyen to"
+    checkNumberArray(a)
+    document.write("Số từ trong chuỗi: " + checkNumberArray(a));
+</script>
+</body>
+</html>

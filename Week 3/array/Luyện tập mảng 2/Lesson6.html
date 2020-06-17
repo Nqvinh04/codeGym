@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkCharacters(arr) {
+        // let arrayNew = [];
+        for (let i = 0; i < arr.length;i++){
+            if ( arr[i] === "-"){
+                // arr.slice(arr[i],1,"*");
+                arr[i] = "_";
+            }
+        }
+        return arr;
+    }
+    let a = [1,"-",2,"-",3,"-",4,"-",5,"-",6,"-"];
+    document.write(a + "</br>")
+    document.write(checkCharacters(a));
+
+</script>
+</body>
+</html>
