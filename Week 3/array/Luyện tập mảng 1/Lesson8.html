@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++){
+        let value = prompt("nhập số");
+        arr.push(value);
+    }
+    document.write("Mảng vừa nhập: " + arr +"</br>");
+    document.write("Sắp xếp lại mẩng theo thứ tự tăng dần: " + arr.sort(conpareName));
+    
+    function conpareName(a,b) {
+        return a - b;
+    }
+</script>
+</body>
+</html>

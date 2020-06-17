@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function inputArray(array) {
+        for(let i = 0; i < 10; i++){
+            array[i] = prompt("Nhập số ")
+        }
+    }
+    // function con
+
+    let arr1 = [];
+    inputArray(arr1);
+    let arr2 = [];
+    inputArray(arr2);
+    let arr3 = [];
+    document.write("Mảng arr3: " + arr3.concat(arr1,arr2));
+</script>
+</body>
+</html>

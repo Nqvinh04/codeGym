@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i;
+
+    function inputArray(arr) {
+        let sizeArray
+        do {
+            sizeArray = prompt("Nhập kích thước của mảng: ")
+        } while (sizeArray <= 0);
+
+        for (i = 0; i < sizeArray; i++){
+            arr[i] = prompt("Nhập phần tử thứ: " + i);
+        }
+    }
+    function displayArray(arr) {
+        for (i =0; i < arr.length; i++) document.write( arr[i] + " ");
+    }
+    function checkNumberArray(arr) {
+        let count=0;
+        for (i=0; i < arr.length; i++){
+            if (isNaN(arr[i]) === false){
+                count++;
+            }
+        }
+        return count;
+    }
+    let a = []
+
+    inputArray(a);
+    displayArray(a);
+    document.write( "</br>" + " Số ký tự số trong mảng là " + checkNumberArray(a));
+</script>
+</body>
+</html>
