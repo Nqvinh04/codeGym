@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function maxNumber(number1,number2,number3) {
+        if ( number1 > number2){
+            if (number1 > number3) {
+                return number1
+            } else {
+                return  number3
+            }
+        } else if (number2 > number3) {
+             return  number2
+        } else {
+            return  number3
+        }
+    }
+    let a1 =+ prompt("Nhập số thứ nhất");
+    let b2 =+ prompt("Nhập số thứ hai");
+    let c3 =+ prompt(" Nhập số thứ ba");
+    alert(maxNumber(a1,b2,c3))
+</script>
+</body>
+</html>

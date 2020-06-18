@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function transArray(arr) {
+    //     let newArray = [];
+    //     for (let i = arr.length - 1; i >=0; i--){
+    //         newArray += arr[i];
+    //     }
+    //     return newArray;
+    // }
+
+    function transArray(arr){
+        let first = 0;
+        let last = arr.length - 1;
+        while (first < last){
+            let tempt;
+            tempt = arr[first];
+            arr[first] = arr[last];
+            arr[last] = tempt;
+            first++;
+            last--;
+        }
+        return arr;
+    }
+
+    let a = [1,2,3,4,5,6,7,8,9];
+
+    document.write(transArray(a));
+</script>
+</body>
+</html>

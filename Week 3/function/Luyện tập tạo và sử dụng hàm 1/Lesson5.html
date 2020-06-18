@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkStr(str) {
+        let array1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let array2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        for (let i = 0; i < array1.length; i++){
+            if (array1[i] === str){
+                str = array2[i];
+            }
+        }
+        return str;
+    }
+    let a = prompt("Nhập tên ngôi sao");
+    let b = checkStr(a);
+    alert(b);
+</script>
+</body>
+</html>

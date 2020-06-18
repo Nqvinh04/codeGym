@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    function checkCharacters(arrStr,x) {
+        let count = 0;
+        for (let i = 0; i < arrStr.length; i++){
+            if (x === arrStr[i]) count++;
+        }
+        if ( count > 0) return count; return -1;
+    }
+    let a = ["a","b","*","*","-","*"]
+    let b = prompt("nhập ký tự");
+    alert(checkCharacters(a,b));
+</script>
+</body>
+</html>
