@@ -1,0 +1,19 @@
+canvas {
+    border: 1px solid black;
+    display: block;
+}
+.start {
+    width: 80px;
+    height: 50px ;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.reset {
+    width: 80px;
+    height: 50px ;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 15%;
+}
